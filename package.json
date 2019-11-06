@@ -1,0 +1,21 @@
+{
+  "name": "systemjs-issue-2064-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "node ./build.js",
+    "start": "http-server -p 2064 -o"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.7.0",
+    "@babel/preset-env": "^7.7.1",
+    "fs-extra": "^8.1.0",
+    "systemjs": "^6.1.4"
+  },
+  "devDependencies": {
+    "http-server": "^0.11.1"
+  }
+}
