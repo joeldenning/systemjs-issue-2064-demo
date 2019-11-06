@@ -9,7 +9,7 @@ const babel = require('@babel/core');
 	await fs.writeFile('caller.js', result.code);
 })();
 
-// Build rollup, use babel, to System.register
+// Build callee, use babel, to System.register
 (async () => {
 	const result = await babel.transformFileAsync('source/callee.js', {
 		presets: [['@babel/preset-env', { modules: 'systemjs' }]],
